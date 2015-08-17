@@ -380,7 +380,8 @@ a:focus {
 
     #map {
         height: 400px;
-        margin-top: 250px;
+        margin-top: 150px;
+        margin-bottom: 8px;
     }
 
     .partner-logos img {
