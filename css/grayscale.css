@@ -213,10 +213,18 @@ a:focus {
     width: 65%;
 }
 
+#contact {
+    text-align: center;
+}
+
 #location {
     background: #950025;
     width: 100%;
-    margin-top: 100px;
+    margin-top: 200px;
+}
+
+#affiliates {
+    margin-bottom: 20%;
 }
 
 @media(min-width:768px) {
