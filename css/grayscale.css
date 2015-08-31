@@ -358,11 +358,17 @@ a:focus {
 }
 
 #map {
-    width: 50%;
+    width: 70%;
     height: 200px;
+<<<<<<< HEAD
+    margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+=======
     margin-top: auto;
     margin-left: auto;
     margin-right: auto;
+>>>>>>> 81ca5bff292922993ed71adf23ffbf41cae4c328
 }
 
 @media(min-width:767px) {
@@ -380,8 +386,12 @@ a:focus {
 
     #map {
         height: 400px;
+<<<<<<< HEAD
+        margin-top: 100px;
+=======
         margin-top: 150px;
         margin-bottom: 8px;
+>>>>>>> 81ca5bff292922993ed71adf23ffbf41cae4c328
     }
 
     .partner-logos img {
