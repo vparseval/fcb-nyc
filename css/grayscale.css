@@ -105,7 +105,7 @@ a:focus {
 
 .navbar-custom .nav li a:hover {
     outline: 0;
-    color: DodgerBlue;
+    color: #1E90FF;
     background-color: transparent;
 }
 
@@ -127,6 +127,30 @@ a:focus {
     color: #fff;
 }
 
+.nav ul{
+    position:relative;
+    left:-9999px; 
+}
+.nav ul li{
+    padding-top:3px; /* Introducing a padding between the li and the a give the illusion spaced items */
+    float:none;
+}
+.nav ul a{
+    white-space:nowrap; /* Stop text wrapping and creating multi-line dropdown items */
+}
+.nav li:hover ul{ /* Display the dropdown on hover */
+    left:0; /* Bring back on-screen when needed */
+}
+.nav li:hover a{ 
+    color: white;
+}
+.nav li:hover ul a{ /* The persistent hover state does however create a global style for links even before they're hovered. Here we undo these effects. */
+    text-decoration:none;
+}
+.nav li:hover ul li a:hover{ /* Here we define the most explicit hover states--what happens when you hover each individual link. */
+    color: #1E90FF;
+}
+
 @media(min-width:768px) {
     .navbar-custom {
         padding: 20px 0;
@@ -145,6 +169,8 @@ a:focus {
     }
 }
 
+
+
 .intro {
     display: table;
     width: 100%;
@@ -161,6 +187,7 @@ a:focus {
 
 .brand-heading img  {
     width: 100%;
+    margin-top: 150px;
 }
 
 .intro .intro-body {
@@ -220,11 +247,16 @@ a:focus {
 #location {
     background: #950025;
     width: 100%;
-    margin-top: 200px;
+    margin-top: 0;
 }
 
 #affiliates {
     margin-bottom: 20%;
+}
+
+#friends {
+    padding-top: 5px;
+    padding-bottom: 50px;
 }
 
 @media(min-width:768px) {
@@ -341,7 +373,6 @@ a:focus {
 
 .membership-section {
     width: 100%;
-    padding: 50px 0;
     color: #fff;
     background: url(../img/steuben.jpg) no-repeat center center scroll;
     background-color: #000;
